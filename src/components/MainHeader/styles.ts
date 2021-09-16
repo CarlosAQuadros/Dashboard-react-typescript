@@ -15,10 +15,11 @@ export const Container = styled.div`
 `
 
 export const Profile=styled.div`
+
     display: flex;
     flex-direction: column;
     color:${props => props.theme.colors.white} ;
-
+    margin-right: 20px;
 `
 
 export const Welcome=styled.h3`
