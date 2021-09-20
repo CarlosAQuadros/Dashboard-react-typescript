@@ -47,6 +47,8 @@ export const MenuItemLink = styled.a`
     transition: opacity .3s ;
     &:hover{
         opacity: 0.7;
+      
+
     }
     >svg{
         font-size: 18px;

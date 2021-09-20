@@ -1,0 +1,49 @@
+import styled from "styled-components";
+
+
+interface ITagProps{
+    color:string;
+}
+export const Container = styled.li`
+    background-color: ${props=> props.theme.colors.tertiary};
+    list-style: none;
+    border-radius: 5px;
+
+    margin: 10px;
+    padding: 12px 10px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    cursor: pointer;
+    transition: all .3s;
+
+    position: relative;
+    &:hover{
+        opacity: .7;
+        transform: translatex(10px);
+
+    }
+    >div{
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+    }
+    >div span{
+
+    }
+`
+
+export const Tag = styled.div<ITagProps>`
+    position: absolute;
+    left: 0;
+    border-radius: 5px;
+
+    width: 10px;
+    height: 60%;
+    background-color: ${props => props.color};
+
+
+
+`
